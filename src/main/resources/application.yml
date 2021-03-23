@@ -1,0 +1,27 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/subscriptionsdb?useSSL=false
+    username: root
+    password:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+
+server:
+  port: 1949
+
+api-key:
+  header: API-KEY
+  secret: 180497E7E3073666EFD74874DDB2CDEBFCCEA42FDAEEB2806754B12451CDAE4D
+
+api-factory:
+  apis:
+    emailing-service:
+      ip: http://localhost:1950
+      header-key: API-KEY
+      header-value: 81ABDBF009A1CC69EBF9BC564A8677BF050063044306CD1FD03F17CC27CEEDEB
+
